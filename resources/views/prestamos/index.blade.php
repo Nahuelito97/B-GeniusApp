@@ -12,6 +12,7 @@
        <div class="row mb-2">
          <div class="col-sm-6">
            <h1 class="m-0 text-dark">Sistema bibliotecario</h1>
+           <br>
            <h1 class="all-tittles text-dark"> <small></small></h1>
          </div>
          <div class="col-sm-6">
@@ -21,12 +22,17 @@
            </ol>
          </div><!-- /.col -->
        </div>
+
        <div class="col-xs-6 col-sm-4 col-md-3">
            <img src="{{asset(
              'front-end/assets/img/calendar_book.png')}}" alt="calendar" class="img-responsive center-box" style="max-width: 110px;">
        </div>
+       <br>
        <div class="col-xs-8 col-sm-8 col-md-6 text-justify lead">
-           Bienvenido a esta sección, aquí se muestran todos los préstamos de libros realizados hasta la fecha y que ya se entregaron satisfactoriamente.
+          <h4>
+            Bienvenido a esta sección, aquí se muestran todos los préstamos de libros realizados hasta la fecha y que ya se entregaron satisfactoriamente.
+          </h4>
+           <br>
        </div>
      </div><!-- /.container-fluid -->
    </section>
@@ -40,7 +46,7 @@
            <!-- general form elements disabled -->
            <div class="card card-warning">
              <div class="card-header">
-               <h3 class="card-title">Listado de Préstamos.</h3>
+               <h4 class="card-title">Listado de Préstamos.</h4>
              </div>
              <!-- /.card-header -->
              <div class="card-body">
@@ -53,7 +59,7 @@
                      <th class="min-tablet">Fecha Solicitud</th>
                      <th class="min-tablet">Fecha Entrega</th>
                      <th class="min-desktop">Estado</th>
-                     <th class="min-desktop">Cambiar Estado</th>                    
+                     <th class="min-desktop">Cambiar Estado</th>
                  </thead>
                  <tbody>
                    @foreach($prestamos as $prestamo)

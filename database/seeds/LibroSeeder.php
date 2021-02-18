@@ -1,5 +1,6 @@
 <?php
 
+use App\Libro;
 use Illuminate\Database\Seeder;
 
 class LibroSeeder extends Seeder
@@ -11,6 +12,7 @@ class LibroSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Libro::class,20)->create();
     }
 }
+

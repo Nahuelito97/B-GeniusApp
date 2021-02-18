@@ -17,7 +17,7 @@ class CreateCategoriasTable extends Migration
           $table->bigIncrements('id');
           $table->string('nombre');
 
-
+          $table->string('description')->nullable();
 
       });
     }

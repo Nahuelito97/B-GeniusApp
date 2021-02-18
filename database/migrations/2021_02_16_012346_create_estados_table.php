@@ -18,6 +18,8 @@ class CreateEstadosTable extends Migration
           $table->bigIncrements('id');
           $table->string('descripcion');
 
+          $table->string('description')->nullable();
+
       });
     }
 

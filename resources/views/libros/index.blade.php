@@ -12,6 +12,7 @@
        <div class="row mb-2">
          <div class="col-sm-6">
            <h1 class="m-0 text-dark">Sistema bibliotecario</h1>
+           <br>
            <h1 class="all-tittles text-dark"> <small></small></h1>
          </div>
          <div class="col-sm-6">
@@ -24,10 +25,13 @@
        <div class="col-xs-12 col-sm-4 col-md-3">
            <img src="{{asset(
              'front-end/assets/img/checklist.png')}}" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
+             <br>
        </div>
        <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-           Bienvenido al catálogo, selecciona una categoría y un estado de la lista para empezar a filtar los libros,
-           si deseas buscar un libro por título has click en el icono de busqueda.
+        <h4>Bienvenido al catálogo, selecciona una categoría y un estado de la lista para empezar a filtar los libros,
+            si deseas buscar un libro por título has click en el icono de busqueda.
+        </h4>
+        <br>
        </div>
      </div><!-- /.container-fluid -->
    </section>
@@ -100,8 +104,9 @@
          </form>
        </nav>
         <!-- Direct Chat -->
+        <br>
         <h4 class="mt-4 mb-2">Listado de Libros</h4>
-
+       <br>
 
         <div class="features">
           <div class="row">
@@ -160,8 +165,9 @@
              <!-- /.col -->
             @endforeach
           </div>
-
+          {{ $libros->links() }}
        </div>
+
        <!-- /.row -->
 
      </div><!-- /.container-fluid -->

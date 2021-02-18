@@ -13,6 +13,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Sistema bibliotecario</h1>
+            <br>
             <h1 class="all-tittles text-dark"> <small></small></h1>
           </div>
           <div class="col-sm-6">
@@ -25,10 +26,15 @@
             <img src="{{asset(
               'front-end/assets/img/user03.png')}}" alt="user" class="img-responsive center-box" style="max-width: 110px;">
         </div>
+        <br>
         <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-            Bienvenido a la sección aqui podra editar la información del cliente
-            que selecciono, complete los campos que desea editar en el siguiente formulario.
+            <h4>
+                Bienvenido a la sección aqui podra editar la información del cliente
+                que selecciono, complete los campos que desea editar en el siguiente formulario.
+            </h4>
+            <br>
         </div>
+
       </div><!-- /.container-fluid -->
     </section>
 
@@ -68,7 +74,7 @@
                       <label for="nombre">Nombre</label>
                       <input id="nombre" type="text" class="form-control @error('nombre') is-invalid @enderror"
                       name="nombre" value="{{ old('nombre',  $cliente->nombre) }}"
-                      autocomplete="nombre" autofocus disabled="disabled">
+                      autocomplete="nombre" autofocus>
                         @error('nombre')
                         <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
@@ -81,7 +87,7 @@
                       <label for="apellido">Apellido</label>
                       <input id="apellido" type="text" class="form-control @error('apellido') is-invalid @enderror" name="apellido"
                       value="{{ old('apellido', $cliente->apellido) }}"
-                      autocomplete="apellido" autofocus disabled="disabled">
+                      autocomplete="apellido" autofocus>
                         @error('apellido')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -107,7 +113,7 @@
                       <label for="fechanacimiento">Fecha Nacimiento</span></label>
                       <input id="fechanacimiento" type="data" class="form-control @error('fechanacimiento') is-invalid @enderror" name="fechanacimiento"
                       value="{{ old('fechanacimiento', $cliente->fechanacimiento) }}"
-                      autocomplete="fechanacimiento" autofocus disabled="disabled">
+                      autocomplete="fechanacimiento" autofocus>
                           @error('fechanacimiento')
                               <span class="invalid-feedback" role="alert">
                                   <strong>{{ $message }}</strong>

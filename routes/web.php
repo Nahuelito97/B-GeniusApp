@@ -20,7 +20,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+/**
+ PARA LA RUTA DE BUSQUEDA GENERAL
+ */
 
+Route::get('/search', 'SearchController@show');
+Route::get('/products/json', 'SearchController@data');
 
 /*--RUTA PARA LIBROS--*/
 
@@ -88,3 +93,6 @@ Route::prefix('prestamos')->group(function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+

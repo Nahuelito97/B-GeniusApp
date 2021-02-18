@@ -52,7 +52,8 @@
               <span class="bar-login"></span>
               <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('') }}</label>
 
-            </div><br>
+            </div>
+            <br>
             <div class="group-material-login">
               <input id="password" type="password"  class="form-control @error('password') is-invalid @enderror"
               name="password" required autocomplete="current-password" maxlength="70"

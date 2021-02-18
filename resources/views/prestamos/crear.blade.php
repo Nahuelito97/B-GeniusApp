@@ -13,6 +13,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Sistema bibliotecario</h1>
+            <br>
             <h1 class="all-tittles text-dark"> <small></small></h1>
           </div>
           <div class="col-sm-6">
@@ -25,11 +26,15 @@
             <img src="{{asset(
               'front-end/assets/img/calendar_book.png')}}" alt="calendar" class="img-responsive center-box" style="max-width: 110px;">
         </div>
+        <br>
          <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-             Bienvenido a la sección para registrar nuevos préstamos,
-             para poder registrar un nuevo préstamo usted debe de seleccionar
-             un cliente, un libro y una fecha en el siguiente
-             formulario.
+             <h4>
+                Bienvenido a la sección para registrar nuevos préstamos,
+                para poder registrar un nuevo préstamo usted debe de seleccionar
+                un cliente, un libro y una fecha en el siguiente
+                formulario.
+             </h4>
+             <br>
          </div>
       </div><!-- /.container-fluid -->
     </section>

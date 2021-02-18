@@ -1,5 +1,6 @@
 <?php
 
+use App\Prestamo;
 use Illuminate\Database\Seeder;
 
 class PrestamoSeeder extends Seeder
@@ -11,6 +12,7 @@ class PrestamoSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Prestamo::class, 20)->create();
     }
 }
+

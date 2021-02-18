@@ -12,6 +12,7 @@
        <div class="row mb-2">
          <div class="col-sm-6">
            <h1 class="m-0 text-dark">Sistema bibliotecario</h1>
+           <br>
            <h1 class="all-tittles text-dark"> <small></small></h1>
          </div>
          <div class="col-sm-6">
@@ -25,10 +26,14 @@
            <img src="{{asset(
              'front-end/assets/img/user03.png')}}" alt="user" class="img-responsive center-box" style="max-width: 110px;">
        </div>
+       <br>
        <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-         Bienvenido a la sección donde se encuentra el listado de clientes de la
-         biblioteca, podrás buscar los clientes por nombre.
-         Puedes actualizar o eliminar los datos del cliente.<br>
+        <h4>
+            Bienvenido a la sección donde se encuentra el listado de clientes de la
+            biblioteca, podrás buscar los clientes por nombre.
+            Puedes actualizar o eliminar los datos del cliente.
+        </h4>
+        <br>
        </div>
      </div><!-- /.container-fluid -->
    </section>

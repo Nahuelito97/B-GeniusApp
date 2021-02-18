@@ -2,12 +2,13 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Categorias;
+use App\Estado;
 use Faker\Generator as Faker;
 
-$factory->define(Categorias::class, function (Faker $faker) {
+$factory->define(Estado::class, function (Faker $faker) {
     return [
-        'nombre' => $faker->word,
+
+        'descripcion' => $faker->word,
         'description' => $faker->sentence(10),
     ];
 });

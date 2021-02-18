@@ -42,8 +42,9 @@
         <!-- Small boxes (Stat box) -->
         <div class="col-sm-6">
           <h1 class="m-0 text-dark">Secciones</h1>
-
         </div>
+
+    </br>
 
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -52,7 +53,7 @@
                 <div class="inner">
                   <h3>{{$categoria}}</h3>
 
-                  <p>Categorias Registradas</p>
+                  <p>Categorías Registradas</p>
                 </div>
                 <div class="icon">
                 <i class="fas fa-bookmark"></i>

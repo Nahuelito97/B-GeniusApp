@@ -10,6 +10,21 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{ route('home') }}" class="nav-link">Inicio</a>
       </li>
+
+
+      <!-- SEARCH FORM -->
+        <form class="form-inline ml-3"  method="get" action="#">
+        <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search"
+            placeholder="¿Qué estas buscando?" aria-label="Search" name="query" id="search">
+            <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+            </div>
+        </div>
+        </form>
+
     </ul>
 
 

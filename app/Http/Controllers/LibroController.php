@@ -38,7 +38,7 @@ class LibroController extends Controller
       $estado=Estado::find($request->estado_id);
     }
 
-    $libros = $consulta->whereBorrado(0)->where('titulo', 'like', "%$titulo%")->paginate(10);
+    $libros = $consulta->whereBorrado(0)->where('titulo', 'like', "%$titulo%")->paginate(6);
     //retorno la vista
     return view('libros.index', compact('libros', 'categorias', 'categoria', 'estados', 'estado'));
   }
