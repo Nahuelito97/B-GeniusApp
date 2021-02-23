@@ -40,8 +40,8 @@ class ClienteRequest extends FormRequest
           'apellido.required' => 'Es necesario ingresar un Apellido para el cliente.',
           'direccion.required' => 'Es necesario ingresar una Dirección para el cliente.',
           'fechanacimiento.required' => 'Es necesario seleccionar una Fecha de Nacimiento para el cliente.',
-          'telefono.required' => 'Es necesario ingresar un número de Telefono.',
-          'correoelectronico.required' => 'Es necesario ingresar un Corro Electronico para el cliente.',
+          'telefono.required' => 'Es necesario ingresar un número de Teléfono.',
+          'correoelectronico.required' => 'Es necesario ingresar un Correo Electronico para el cliente.',
 
         ];
     }

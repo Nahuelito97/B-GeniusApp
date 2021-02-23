@@ -69,23 +69,23 @@
                    @csrf
                    <div class="col-lg-12">
 
-                    <div class="form-group has-feedback">
-                      <label for="nombre" class="control-label text-semibold">Nombre</label>
-                      <input id="nombre"type="text" class="form-control @error('nombre') is-invalid @enderror"
-                      placeholder="Escribe aquí la descripción de la categoría"
-                      title="Descripción"
-                      name="nombre"
-                      value="{{ old('nombre') }}"
-                      autocomplete="nombre"
-                      autofocus>
-                      @error('nombre')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
+                        <div class="form-group has-feedback">
+                            <label for="nombre" class="control-label text-semibold">Nombre</label>
+                            <input id="nombre"type="text" class="form-control @error('nombre') is-invalid @enderror"
+                            placeholder="Escribe aquí la descripción de la categoría"
+                            title="Descripción"
+                            name="nombre"
+                            value="{{ old('nombre') }}"
+                            autocomplete="nombre"
+                            autofocus>
+                            @error('nombre')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
 
-                  </div>
-                 </div>
+                        </div>
+                    </div>
                  <div class="col-xs-12">
                       <p class="text-center">
                           <button type="reset" class="btn btn-info btn-rounded" style="margin-right: 20px;"><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>

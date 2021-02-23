@@ -50,9 +50,11 @@
 
                <table id="clientes" class="table table-bordered table-hover">
                  <thead>
-                     <tr>
-                         <th class="min-tablet">Descripción</th>
-                     </tr>
+                    <tr>
+                        <th class="min-tablet">Nombre</th>
+                        <th class="min-tablet">Descripción</th>
+                    </tr>
+
                  </thead>
                  <tbody>
                    @foreach($categorias as $categoria)
@@ -61,6 +63,9 @@
                        <td>
                            {{$categoria->nombre}}
                        </td>
+                       <td>
+                        {{$categoria->description}}
+                    </td>
                      </tr>
                    @endforeach
                  </tbody>
