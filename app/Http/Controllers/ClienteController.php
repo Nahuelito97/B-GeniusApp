@@ -19,7 +19,7 @@ class ClienteController extends Controller
       $nombre = $request->get('buscarpor');
 
 
-      $clientes = Cliente::whereBorrado(0)->where('nombre', 'like', "%$nombre%")->paginate(50);
+      $clientes = Cliente::whereBorrado(0)->where('nombre', 'like', "%$nombre%")->paginate(100);
       return view('clientes.index', ['clientes' => $clientes]);
   }
 

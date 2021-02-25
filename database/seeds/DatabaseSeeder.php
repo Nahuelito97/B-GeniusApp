@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CategoriaTableSeeder::class);
         $this->call(EstadosTableSeeder::class);
         $this->call(LibroSeeder::class);
-        $this->call(PrestamoSeeder::class);
+        //$this->call(PrestamoSeeder::class);
 
     }
 }

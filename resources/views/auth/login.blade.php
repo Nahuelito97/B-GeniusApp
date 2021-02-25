@@ -33,6 +33,22 @@
 </head>
 <body>
   <div class="login-container full-cover-background">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="text-center all-tittles" style="margin-bottom: 30px; color:#fff;">B-Genius | Sistema Bibliotecario</h1>
+          </div><!-- /.col -->
+
+        </div><!-- /.row -->
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <img src="{{asset(
+              'front-end/assets/img/flat-book.png')}}" alt="pdf" class="img-responsive center-box" style="max-width: 150px;">
+        </div>
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
     <div class="form-container">
         <p class="text-center" style="margin-top: 17px;">
            <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>

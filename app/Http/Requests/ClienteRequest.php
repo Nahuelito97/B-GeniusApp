@@ -29,7 +29,7 @@ class ClienteRequest extends FormRequest
             'direccion'=>'required|min:15',
             'fechanacimiento'=>'required|date|before_or_equal:today',
             'telefono'=>'bail|required|unique:clientes|max:10',
-            'correoelectronico'=>'required',
+            'correoelectronico'=>'required|unique',
         ];
     }
 
@@ -37,8 +37,11 @@ class ClienteRequest extends FormRequest
     {
         return [
           'nombre.required' => 'Es necesario ingresar un Nombre para el cliente.',
+          'nombre.min' => 'El nombre del Cliente debe de tener 10 caracteres.',
           'apellido.required' => 'Es necesario ingresar un Apellido para el cliente.',
+          'apellido.min' => 'El apellido del Cliente debe de tener 10 caracteres.',
           'direccion.required' => 'Es necesario ingresar una Dirección para el cliente.',
+          'direccion.min' => 'La dirección debe de tener 15 caracteres.',
           'fechanacimiento.required' => 'Es necesario seleccionar una Fecha de Nacimiento para el cliente.',
           'telefono.required' => 'Es necesario ingresar un número de Teléfono.',
           'correoelectronico.required' => 'Es necesario ingresar un Correo Electronico para el cliente.',

@@ -33,6 +33,26 @@
 </head>
 <body>
   <div class="login-container full-cover-background">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6" style="padding: 10px 0; color:#fff;">
+            <h1 class="m-0 text-dark">B-Genius | Sistema Bibliotecario</h1>
+          </div><!-- /.col -->
+
+        </div><!-- /.row -->
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <img src="{{asset(
+              'front-end/assets/img/flat-book.png')}}" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
+        </div>
+        <div class="col-xs-8 col-sm-6 col-md-6 text-justify lead">
+          <h1 class="text-center all-tittles" style="margin-bottom: 30px; color:#fff;">Las Bibliotecas son puertas a otras vidas.</h1>
+          <h4 class="text-center" style="margin-bottom: 30px; color:#fff;">De todos los instrumentos del hombre, el más asombroso es, sin duda, el Libro.</h4>
+        </div>
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
     <div class="form-container">
         <p class="text-center" style="margin-top: 17px;">
            <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>

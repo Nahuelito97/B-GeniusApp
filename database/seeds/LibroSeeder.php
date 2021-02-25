@@ -12,7 +12,7 @@ class LibroSeeder extends Seeder
      */
     public function run()
     {
-        factory(Libro::class,20)->create();
+        factory(Libro::class,30)->create();
     }
 }
 

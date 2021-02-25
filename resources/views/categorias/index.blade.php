@@ -48,7 +48,7 @@
              <!-- /.card-header -->
              <div class="card-body">
 
-               <table id="clientes" class="table table-bordered table-hover">
+               <table id="clientes" class="table table-hover">
                  <thead>
                     <tr>
                         <th class="min-tablet">Nombre</th>

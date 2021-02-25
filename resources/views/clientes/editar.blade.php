@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                      <label for="fechanacimiento">Fecha Nacimiento</span></label>
+                      <label for="fechanacimiento">Fecha Nacimiento (No se debe de modificar este dato)</span></label>
                       <input id="fechanacimiento" type="data" class="form-control @error('fechanacimiento') is-invalid @enderror" name="fechanacimiento"
                       value="{{ old('fechanacimiento', $cliente->fechanacimiento) }}"
                       autocomplete="fechanacimiento" autofocus>

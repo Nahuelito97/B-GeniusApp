@@ -12,7 +12,7 @@ class PrestamoSeeder extends Seeder
      */
     public function run()
     {
-        factory(Prestamo::class, 20)->create();
+        factory(Prestamo::class, 25)->create();
     }
 }
 

@@ -89,7 +89,7 @@
                                        <span class="badge badge-success">Devuelto</span>
                                    @break
                                    @case(2)
-                                       <span class="badge badge-warning">No Devuelto</span>
+                                       <span class="badge badge-danger">No Devuelto</span>
                                    @break
                                @endswitch
                            </td>
