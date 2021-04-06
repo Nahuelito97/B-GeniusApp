@@ -20,7 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-/**
+/*--
  PARA LA RUTA DE BUSQUEDA GENERAL
  */
 
@@ -93,6 +93,3 @@ Route::prefix('prestamos')->group(function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-

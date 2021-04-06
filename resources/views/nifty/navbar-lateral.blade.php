@@ -17,12 +17,8 @@
              'adminlt/dist/img/nahu.jpeg')}}" class="img-circle elevation-2" alt="User Image">
        </div>
        <div class="info">
-         @guest
-
-         @else
-             <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-
-         @endguest
+        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+        <a href="#" class="d-block">{{ Auth::user()->email }}</a>
        </div>
      </div>
 
