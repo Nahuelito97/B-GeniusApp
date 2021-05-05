@@ -51,7 +51,7 @@ class LibroController extends Controller
       $categorias = Categorias::all();
       $estados = Estado::all();
 
-      return view('libros.crear', compact('categorias', 'estados', 'pais'));
+      return view('libros.crear', compact('categorias', 'estados'));
   }
 
 
