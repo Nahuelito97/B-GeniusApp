@@ -29,6 +29,7 @@ class LibroRequest extends FormRequest
           'categoria_id' => 'required',
           'estado_id'=>'required',
           'titulo'=> 'required|min:15',
+          'image' => 'image.jpg',
           'autor'=> 'required|min:15',
           'cod_libro'=>'bail|required|unique:libros|max:255',
           'pais'=>'required|min:15',

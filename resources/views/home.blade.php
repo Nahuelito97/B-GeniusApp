@@ -92,7 +92,7 @@
           <!-- small box -->
           <div class="small-box bg-info">
             <div class="inner">
-              <h3>{{$cantidad}}</h3>
+              <h3>{{$libritos}}</h3>
 
               <p> Total de Libros</p>
             </div>
@@ -110,6 +110,78 @@
   </section>
 
   <!-- /.content -->
+  <!-- Main content -->
+   <section class="content">
+     <div class="container-fluid">
+
+        <h4 class="mt-4 mb-2">Listado de Libros</h4>
+       <br>
+
+        <div class="features">
+          <div class="row">
+            @foreach($libros as $libro)
+             <div class="col-md-4">
+
+               <!-- Widget: user widget style 1 -->
+               <div class="card card-widget widget-user">
+                 <!-- Add the bg color to the header using any of the bg-* classes -->
+                 <div class="widget-user-header text-white"
+                      style="background: url('https://cdn.pixabay.com/photo/2016/01/09/18/27/old-1130739_960_720.jpg') center center;">
+                   <h3 class="widget-user-username text-right">{{$libro->titulo}}</h3>
+                   <h5 class="widget-user-desc text-right">{{$libro->autor}}</h5>
+                 </div>
+
+                 <div class="card-footer">
+                   <div class="row">
+                     <div class="col-sm-4 border-right">
+                       <div class="description-block">
+                         <span class="description-text">Código</span>
+                         <h5 class="description-header">{{$libro->cod_libro}}</h5>
+                       </div>
+                       <!-- /.description-block -->
+                     </div>
+                     <!-- /.col -->
+                     <div class="col-sm-4 border-right">
+                       <div class="description-block">
+                         <span class="description-text">Cantidad</span>
+                         <h5 class="description-header">{{$libro->cantidad}}</h5>
+                       </div>
+                       <!-- /.description-block -->
+                     </div>
+                     <!-- /.col -->
+                     <div class="col-sm-4">
+                       <div class="description-block">
+                         <a  class="btn btn-success" href="{{route('libros.editar', $libro)}}">
+                           <i class="fas fa-edit"></i>
+                         </a>
+                         <form method="post" action="{{route('libros.borrar', $libro)}}">
+                           {{ csrf_field ()}}
+                           {{ method_field('put')}}
+                           <button type="submit" class="btn btn-danger btn-round" onclick="return confirm('¿Seguro que desea Eliminar este libro?')" title="Eliminar Libro">
+                               <i class="fa fa-trash" aria-hidden="true"></i>
+                           </button>
+                         </form>
+                       </div>
+                       <!-- /.description-block -->
+                     </div>
+                     <!-- /.col -->
+                   </div>
+                   <!-- /.row -->
+                 </div>
+               </div>
+               <!-- /.widget-user -->
+             </div>
+             <!-- /.col -->
+            @endforeach
+          </div>
+          {{ $libros->links() }}
+       </div>
+
+       <!-- /.row -->
+
+     </div><!-- /.container-fluid -->
+   </section>
+   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 

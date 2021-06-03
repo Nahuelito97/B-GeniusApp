@@ -31,8 +31,14 @@
     <ul class="navbar-nav ml-auto">
 
       <!-- Salir del Sistema -->
+      <li class="nav-item mt-auto">
+        <a href="{{ route('user.profile') }}" class="nav-link {{ (request()->is('admin/profile')) ? 'active': '' }}">
+          <i class="nav-icon far fa-user">Your Profile</i>
 
+        </a>
+      </li>
       <li class="nav-item dropdown">
+
         @guest
 
         @else

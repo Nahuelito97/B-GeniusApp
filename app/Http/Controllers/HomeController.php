@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-Use App\Cliente;
+use App\Cliente;
 use App\Libro;
 use App\Prestamo;
 use App\Categorias;
+use App\Estado;
 
 class HomeController extends Controller
 {
@@ -31,8 +32,26 @@ class HomeController extends Controller
 
         $pres = Prestamo::count();
         $cliente = Cliente::count();
-        $cantidad = Libro::count();
+        $libritos = Libro::count();
+
         $categoria = Categorias::count();
-        return view('home', compact('cantidad', 'cliente', 'pres', 'categoria'));
+
+
+        $titulo = $request->get('buscarpor');
+
+
+        $consulta = Libro::select('libros.*');
+        if ($request->categoria_id != null) {
+            $consulta = $consulta->whereCategoria_id($request->categoria_id);
+            $categoria = Categorias::find($request->categoria_id);
+        } //categorias
+
+        if ($request->estado_id != null) {
+            $consulta = $consulta->whereEstado_id($request->estado_id);
+            $estado = Estado::find($request->estado_id);
+        }
+
+        $libros = $consulta->whereBorrado(0)->where('titulo', 'like', "%$titulo%")->paginate(15);
+        return view('home', compact('libritos', 'cliente', 'pres', 'categoria','libros'));
     }
 }

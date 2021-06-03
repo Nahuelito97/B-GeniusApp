@@ -88,6 +88,24 @@ Route::prefix('prestamos')->group(function (){
 
  });
 
+
+
+// Admin Panel Routes
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+
+    Route::resource('user', 'UserController');
+    Route::get('/profile', 'UserController@profile')->name('user.profile');
+    Route::post('/profile', 'UserController@profile_update')->name('user.profile.update');
+
+    // setting
+    Route::get('setting', 'SettingController@edit')->name('setting.index');
+    Route::post('setting', 'SettingController@update')->name('setting.update');
+
+
+});
+
+
+
 //Route::get('ticket-list-pdf', 'DataTableController@exportPdf')->name('reportes.imprimir');
 
 Auth::routes();

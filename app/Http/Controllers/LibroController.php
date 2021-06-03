@@ -51,7 +51,7 @@ class LibroController extends Controller
       $categorias = Categorias::all();
       $estados = Estado::all();
 
-      return view('libros.crear', compact('categorias', 'estados', 'pais'));
+      return view('libros.crear', compact('categorias', 'estados'));
   }
 
 
@@ -59,6 +59,8 @@ class LibroController extends Controller
   public function guardar(LibroRequest $request)
   {
       Libro::create($request->all());
+
+
       return redirect()->route('libros')->with(['message' => 'Libro guardado']);
 
       //controles para subir la imagen
