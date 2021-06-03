@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="{{asset(
-      'front-end/assets/icons/book.ico')}}" />
+        'front-end/assets/img/brand.png')}}" />
     <script src="js/sweet-alert.min.js"></script>
     <link rel="stylesheet" href="{{asset(
       'front-end/css/sweet-alert.css')}}">

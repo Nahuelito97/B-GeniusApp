@@ -59,6 +59,8 @@ class LibroController extends Controller
   public function guardar(LibroRequest $request)
   {
       Libro::create($request->all());
+
+
       return redirect()->route('libros')->with(['message' => 'Libro guardado']);
 
       //controles para subir la imagen

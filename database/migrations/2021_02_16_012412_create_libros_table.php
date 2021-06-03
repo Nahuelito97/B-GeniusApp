@@ -17,6 +17,7 @@ class CreateLibrosTable extends Migration
               $table->bigIncrements('id');
 
               $table->string('titulo');
+              $table->string('image')->nullable();
               $table->string('autor', 20);
               $table->integer('cod_libro');
               $table->string('año');

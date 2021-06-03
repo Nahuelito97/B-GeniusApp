@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="{{asset(
-      'front-end/assets/icons/book.ico')}}" />
+      'front-end/assets/img/brand.png')}}" />
     <script src="js/sweet-alert.min.js"></script>
     <link rel="stylesheet" href="{{asset(
       'front-end/css/sweet-alert.css')}}">
@@ -44,7 +44,7 @@
         </div><!-- /.row -->
         <div class="col-xs-12 col-sm-4 col-md-3">
             <img src="{{asset(
-              'front-end/assets/img/flat-book.png')}}" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
+              'front-end/assets/img/brand.png')}}" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
         </div>
         <div class="col-xs-8 col-sm-6 col-md-6 text-justify lead">
           <h1 class="text-center all-tittles" style="margin-bottom: 30px; color:#fff;">Las Bibliotecas son puertas a otras vidas.</h1>
