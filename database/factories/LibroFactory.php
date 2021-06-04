@@ -17,6 +17,7 @@ $factory->define(Libro::class, function (Faker $faker) {
         'cantidad' => $faker->randomDigit,
         'categoria_id' => $faker->numberBetween(1, 20),
         'estado_id' => $faker->numberBetween(1,5),
-        'pais'  => $faker->country
+        'pais'  => $faker->country,
+        'price' => $faker->randomFloat(2, 5, 150),
     ];
 });

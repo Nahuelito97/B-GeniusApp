@@ -111,7 +111,7 @@
         <div class="features">
           <div class="row">
             @foreach($libros as $libro)
-             <div class="col-md-4">
+             <div class="col-md-5">
 
                <!-- Widget: user widget style 1 -->
                <div class="card card-widget widget-user">
@@ -124,7 +124,7 @@
 
                  <div class="card-footer">
                    <div class="row">
-                     <div class="col-sm-4 border-right">
+                     <div class="col-sm-3 border-right">
                        <div class="description-block">
                          <span class="description-text">Código</span>
                          <h5 class="description-header">{{$libro->cod_libro}}</h5>
@@ -132,15 +132,22 @@
                        <!-- /.description-block -->
                      </div>
                      <!-- /.col -->
-                     <div class="col-sm-4 border-right">
+                     <div class="col-sm-3 border-right">
                        <div class="description-block">
                          <span class="description-text">Cantidad</span>
                          <h5 class="description-header">{{$libro->cantidad}}</h5>
                        </div>
                        <!-- /.description-block -->
                      </div>
+                     <div class="col-sm-3 border-right">
+                        <div class="description-block">
+                          <span class="description-text">Precio</span>
+                          <h5 class="description-header">{{$libro->price}}</h5>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
                      <!-- /.col -->
-                     <div class="col-sm-4">
+                     <div class="col-sm-3">
                        <div class="description-block">
                          <a  class="btn btn-success" href="{{route('libros.editar', $libro)}}">
                            <i class="fas fa-edit"></i>

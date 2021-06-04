@@ -15,6 +15,7 @@ class CreatePrestamosTable extends Migration
     {
       Schema::create('prestamos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('quantity');
             $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('libro_id');
             $table->date('fecha_entrega');

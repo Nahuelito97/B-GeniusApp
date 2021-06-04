@@ -28,6 +28,7 @@ class CreateLibrosTable extends Migration
               $table->unsignedBigInteger('categoria_id');
               $table->unsignedBigInteger('estado_id');
               $table->string('pais');
+              $table->float('price');
           });
      }
 

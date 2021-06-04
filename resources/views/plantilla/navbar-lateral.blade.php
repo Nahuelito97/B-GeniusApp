@@ -46,7 +46,7 @@
                       <li><a href="{{ route('prestamos.crear') }}"><i class="zmdi zmdi-calendar zmdi-hc-fw"></i>&nbsp;&nbsp; Crear préstamos</a></li>
 
                       <li><a href="{{ route('prestamos') }}"><i class="zmdi zmdi-calendar zmdi-hc-fw"></i>&nbsp;&nbsp; Todos los préstamos</a></li>
-                    
+
                   </ul>
                 </li>
             </ul>
